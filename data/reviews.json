@@ -1,0 +1,87 @@
+[
+  {
+    "id": "1",
+    "name": "Sarah Johnson",
+    "email": "sarah@example.com",
+    "date": "May 15, 2023",
+    "rating": 5,
+    "comment": "The chocolate cake was absolutely divine! Rich, moist, and the perfect level of sweetness. Will definitely be ordering again!",
+    "dessert": "Chocolate Cake",
+    "avatar": "/avatars/avatar-1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Michael Chen",
+    "email": "michael@example.com",
+    "date": "April 28, 2023",
+    "rating": 4,
+    "comment": "The Boston Cream was fantastic! The custard filling was smooth and the chocolate topping was perfect.",
+    "dessert": "Boston Cream",
+    "avatar": "/avatars/avatar-2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Emily Rodriguez",
+    "email": "emily@example.com",
+    "date": "June 2, 2023",
+    "rating": 5,
+    "comment": "Red Velvet cake is my absolute favorite, and this one did not disappoint! The cream cheese frosting was perfect.",
+    "dessert": "Red Velvet",
+    "avatar": "/avatars/avatar-3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "David Wilson",
+    "email": "david@example.com",
+    "date": "May 5, 2023",
+    "rating": 5,
+    "comment": "The Dulce de Leche cake was incredible! The caramel flavor was rich without being too sweet.",
+    "dessert": "Dulce de Leche",
+    "avatar": "/avatars/avatar-4.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Jessica Brown",
+    "email": "jessica@example.com",
+    "date": "June 10, 2023",
+    "rating": 4,
+    "comment": "The Assorted Treats platter was perfect for our office party. Everyone found something they loved!",
+    "dessert": "Assorted Treats"
+  },
+  {
+    "id": "6",
+    "name": "Robert Kim",
+    "email": "robert@example.com",
+    "date": "May 22, 2023",
+    "rating": 5,
+    "comment": "The vanilla cupcakes are simply perfect! Light, airy, and with just the right amount of frosting. The vanilla flavor is authentic and not artificial.",
+    "dessert": "Vanilla Cupcake"
+  },
+  {
+    "id": "7",
+    "name": "Amanda Garcia",
+    "email": "amanda@example.com",
+    "date": "June 15, 2023",
+    "rating": 4,
+    "comment": "Cinnamon rolls were fresh and delicious. The icing was perfect. Would have given 5 stars but they were a bit too sweet for me.",
+    "dessert": "Cinnamon Roll"
+  },
+  {
+    "id": "8",
+    "name": "Thomas Wright",
+    "email": "thomas@example.com",
+    "date": "April 30, 2023",
+    "rating": 5,
+    "comment": "The apple pie is just like my grandmother used to make. Perfectly spiced and the crust is flaky and buttery. A true comfort dessert!",
+    "dessert": "Apple Pie"
+  },
+  {
+    "id": "9",
+    "name": "Sophia Martinez",
+    "email": "sophia@example.com",
+    "date": "May 18, 2023",
+    "rating": 5,
+    "comment": "The tiramisu is out of this world! Perfect balance of coffee and mascarpone. It transported me straight to Italy!",
+    "dessert": "Tiramisu"
+  }
+] 
