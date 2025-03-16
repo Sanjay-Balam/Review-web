@@ -13,7 +13,7 @@ export default function Hero() {
             </h1>
             <p className="text-lg mb-6 text-[var(--text-color)]">
               Discover our handcrafted desserts and share your sweet experiences. 
-              Every treat tells a story, and we'd love to hear yours.
+              Every treat tells a story, and we&apos;d love to hear yours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/menu" className="btn-primary text-center">
