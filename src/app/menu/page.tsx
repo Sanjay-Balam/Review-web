@@ -106,7 +106,7 @@ export default function MenuPage() {
                 <div className="relative">
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <Image 
-                      src="/assets/images/chocolate-brownie.jpeg" 
+                      src="/assets/images/new-chocolate-brownie.jpeg" 
                       alt="Chocolate Brownie" 
                       width={500} 
                       height={500} 

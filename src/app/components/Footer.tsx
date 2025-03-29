@@ -60,7 +60,7 @@ export default function Footer() {
             <address className="not-italic text-[var(--light-text)]">
               <p>Sainik puri</p>
               <p>Hyderabad, Telangana</p>
-              <p className="mt-2">Mon-Sat: 10am - 8pm</p>
+              <p className="mt-2">Fri-Sun: 6pm - 10pm</p>
               <p>Pin code: 500056</p>
             </address>
           </div>
