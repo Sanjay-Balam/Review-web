@@ -86,9 +86,9 @@ export default function Home() {
                 },
                 {
                   name: 'Chocolate Brownie',
-                  image: '/assets/images/Brownie.jpeg',
+                  image: '/assets/images/new-chocolate-brownie.jpeg',
                   description: 'A decadent chocolate brownie with a rich, fudgy texture, topped with a layer of creamy frosting and garnished with chocolate shavings for a luxurious finish.',
-                  price: '₹139',
+                  price: '₹149',
                 }
 
               ].map((dessert, index) => (

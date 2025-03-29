@@ -63,25 +63,32 @@ export default function MenuPage() {
               <h2 className="text-4xl font-bold text-[#663300] border-b-2 border-[#663300] pb-2 mb-8">CHEESE CAKES</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col justify-center space-y-4">
+                  <div className="flex justify-between items-center pb-2">
+                    <span className="text-xl font-medium">Flavor</span>
+                    <div className="flex">
+                      <span className="text-lg font-semibold text-[#8B4513] w-20 text-center">Small</span>
+                      <span className="text-lg font-semibold text-[#8B4513] w-20 text-center">Large</span>
+                    </div>
+                  </div>
                   <div className="flex justify-between items-center border-b border-amber-200 pb-2">
                     <span className="text-xl font-medium">Lotus biscoff</span>
-                    <div>
-                      <span className="text-xl font-bold mr-4">79/-</span>
-                      <span className="text-xl font-bold">139/-</span>
+                    <div className="flex">
+                      <span className="text-xl font-bold w-20 text-center">79/-</span>
+                      <span className="text-xl font-bold w-20 text-center">139/-</span>
                     </div>
                   </div>
                   <div className="flex justify-between items-center border-b border-amber-200 pb-2">
                     <span className="text-xl font-medium">Oreo</span>
-                    <div>
-                      <span className="text-xl font-bold mr-4">79/-</span>
-                      <span className="text-xl font-bold">139/-</span>
+                    <div className="flex">
+                      <span className="text-xl font-bold w-20 text-center">79/-</span>
+                      <span className="text-xl font-bold w-20 text-center">139/-</span>
                     </div>
                   </div>
                   <div className="flex justify-between items-center border-b border-amber-200 pb-2">
                     <span className="text-xl font-medium">Blueberry</span>
-                    <div>
-                      <span className="text-xl font-bold mr-4">79/-</span>
-                      <span className="text-xl font-bold">139/-</span>
+                    <div className="flex">
+                      <span className="text-xl font-bold w-20 text-center">79/-</span>
+                      <span className="text-xl font-bold w-20 text-center">139/-</span>
                     </div>
                   </div>
                 </div>
