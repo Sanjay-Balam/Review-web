@@ -88,11 +88,15 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
         </div>
       )}
       
+      <p className="text-sm text-gray-500 mb-4">
+        Only rating is required. All other fields are optional.
+      </p>
+      
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-1">
-              Your Name
+              Your Name <span className="text-gray-400">(optional)</span>
             </label>
             <input
               type="text"
@@ -106,7 +110,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
           
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-1">
-              Your Email
+              Your Email <span className="text-gray-400">(optional)</span>
             </label>
             <input
               type="email"
@@ -121,7 +125,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
         
         <div className="mb-4">
           <label className="block text-sm font-medium mb-1">
-            Rating
+            Rating <span className="text-red-500">*</span>
           </label>
           <div className="flex gap-1">
             {[1, 2, 3, 4, 5].map((star) => (
@@ -132,6 +136,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
                 onMouseEnter={() => setHoveredRating(star)}
                 onMouseLeave={() => setHoveredRating(0)}
                 className="p-1 focus:outline-none"
+                aria-label={`Rate ${star} stars`}
               >
                 <StarIcon 
                   filled={star <= (hoveredRating || rating)} 
@@ -147,7 +152,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
         
         <div className="mb-4">
           <label htmlFor="dessert" className="block text-sm font-medium mb-1">
-            Dessert
+            Dessert <span className="text-gray-400">(optional)</span>
           </label>
           <select
             id="dessert"
@@ -166,7 +171,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
         
         <div className="mb-4">
           <label htmlFor="comment" className="block text-sm font-medium mb-1">
-            Your Review
+            Your Review <span className="text-gray-400">(optional)</span>
           </label>
           <textarea
             id="comment"
