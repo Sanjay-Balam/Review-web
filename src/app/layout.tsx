@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Sweet Delights Reviews | Share Your Dessert Experience",
-  description: "Leave reviews for your favorite desserts at Sweet Delights. Share your experience and discover what others are saying about our delicious treats.",
+  title: "Why so Creeamy? Reviews | Share Your Dessert Experience",
+  description: "Leave reviews for your favorite desserts at Why so Creeamy?. Share your experience and discover what others are saying about our delicious treats.",
 };
 
 export default function RootLayout({

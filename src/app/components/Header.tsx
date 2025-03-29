@@ -8,15 +8,15 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-3">
           <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-lg border-2 border-[var(--secondary-color)] transition-transform hover:scale-105">
             <Image 
-              src="/Logo.jpeg" 
-              alt="Sweet Delights Logo" 
+              src="/assets/Logo2.jpg" 
+              alt="Why so Creeamy? Logo" 
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, 56px"
               priority
             />
           </div>
-          <span className="text-xl font-bold text-[var(--secondary-color)] tracking-wide">Sweet Delights</span>
+          <span className="text-xl font-bold text-[var(--secondary-color)] tracking-wide">Why so Creeamy?</span>
         </Link>
         
         <nav>

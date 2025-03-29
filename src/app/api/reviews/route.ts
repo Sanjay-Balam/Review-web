@@ -62,25 +62,22 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     
-    // Validate required fields
-    const requiredFields = ['name', 'email', 'rating', 'dessert', 'comment'];
-    for (const field of requiredFields) {
-      if (!body[field]) {
-        return NextResponse.json(
-          { error: `Missing required field: ${field}` },
-          { status: 400 }
-        );
-      }
+    // Validate only rating is required
+    if (body.rating === undefined || body.rating === null) {
+      return NextResponse.json(
+        { error: 'Rating is required' },
+        { status: 400 }
+      );
     }
     
-    // Create a new review in the database
+    // Create a new review in the database with optional fields
     const newReview = await prisma.review.create({
       data: {
-        name: body.name,
-        email: body.email,
+        name: body.name || '',
+        email: body.email || '',
         rating: parseInt(body.rating),
-        dessert: body.dessert,
-        comment: body.comment,
+        dessert: body.dessert || '',
+        comment: body.comment || '',
         avatar: body.avatar || null,
       },
     });

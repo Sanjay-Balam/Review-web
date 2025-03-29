@@ -102,12 +102,26 @@ export default function ReviewsPage() {
 
   const handleSubmitReview = async (reviewData: any) => {
     try {
+      // Validate only the rating field
+      if (reviewData.rating === undefined || reviewData.rating === null) {
+        throw new Error('Rating is required');
+      }
+      
+      // Ensure empty fields are sent as empty strings rather than undefined
+      const formattedData = {
+        name: reviewData.name || '',
+        email: reviewData.email || '',
+        rating: reviewData.rating,
+        dessert: reviewData.dessert || '',
+        comment: reviewData.comment || '',
+      };
+      
       const response = await fetch('/api/reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(reviewData),
+        body: JSON.stringify(formattedData),
       });
       
       if (!response.ok) {
@@ -125,15 +139,13 @@ export default function ReviewsPage() {
 
   const dessertOptions = [
     'All Desserts',
-    'Chocolate Cake',
-    'Boston Cream',
-    'Red Velvet',
-    'Dulce de Leche',
-    'Assorted Treats',
-    'Vanilla Cupcake',
-    'Apple Pie',
-    'Tiramisu',
-    'Cinnamon Roll'
+    'Milk Malai Milk Cake',
+    'Biscoff Milk Cake',
+    'Oreo Cheesecake',
+    'Blue Berry Cheesecake',
+    'Rasmalai Milk Cake',
+    'Chocolate Brownie',
+    'Biscoff Cheesecake'
   ];
 
   return (

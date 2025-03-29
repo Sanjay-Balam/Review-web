@@ -62,16 +62,14 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
   };
 
   const dessertOptions = [
-    'Chocolate Cake',
-    'Boston Cream',
-    'Red Velvet',
-    'Dulce de Leche',
-    'Assorted Treats',
-    'Vanilla Cupcake',
-    'Apple Pie',
-    'Tiramisu',
-    'Cinnamon Roll',
-    'Other'
+    'All Desserts',
+    'Milk Malai Milk Cake',
+    'Biscoff Milk Cake',
+    'Oreo Cheesecake',
+    'Blue Berry Cheesecake',
+    'Rasmalai Milk Cake',
+    'Chocolate Brownie',
+    'Biscoff Cheesecake'
   ];
 
   return (
@@ -102,7 +100,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent"
-              placeholder="John Doe"
+              placeholder="Enter your name"
             />
           </div>
           
@@ -116,7 +114,7 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent"
-              placeholder="john@example.com"
+              placeholder="Enter your email"
             />
           </div>
         </div>
@@ -183,9 +181,16 @@ export default function ReviewForm({ onSubmit }: ReviewFormProps) {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="btn-primary w-full md:w-auto"
+          className="btn-primary w-full md:w-auto flex items-center justify-center"
         >
-          {isSubmitting ? 'Submitting...' : 'Submit Review'}
+          {isSubmitting ? (
+            <>
+              <div className="inline-block h-5 w-5 mr-2 animate-spin rounded-full border-2 border-solid border-white border-r-transparent"></div>
+              Submitting...
+            </>
+          ) : (
+            'Submit Review'
+          )}
         </button>
       </form>
     </div>

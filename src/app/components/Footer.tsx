@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Sweet Delights</h3>
+            <h3 className="text-lg font-semibold mb-4">Why so Creeamy?</h3>
             <p className="text-[var(--light-text)] mb-4">
-              Bringing joy through delicious desserts since 2010. Our passion is creating sweet memories for our customers.
+              Founded recently, Why so Creeamy? is driven by a passion for creating handcrafted desserts. Our goal is to bring delightful treats to the community, ensuring that every dessert is a masterpiece made from the finest ingredients.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-[var(--primary-color)] hover:text-[var(--secondary-color)]">
@@ -58,18 +58,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Visit Us</h3>
             <address className="not-italic text-[var(--light-text)]">
-              <p>123 Dessert Lane</p>
-              <p>Sweet Town, CA 90210</p>
+              <p>Sainik puri</p>
+              <p>Hyderabad, Telangana</p>
               <p className="mt-2">Mon-Sat: 10am - 8pm</p>
-              <p>Sunday: 12pm - 6pm</p>
-              <p className="mt-2">Phone: (555) 123-4567</p>
-              <p>Email: hello@sweetdelights.com</p>
+              <p>Pin code: 500056</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-gray-100 mt-8 pt-8 text-center text-[var(--light-text)]">
-          <p>&copy; {new Date().getFullYear()} Sweet Delights. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Why so Creeamy?. All rights reserved.</p>
         </div>
       </div>
     </footer>

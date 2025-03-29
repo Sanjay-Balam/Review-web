@@ -27,9 +27,9 @@ export default function Home() {
               </div>
               
               <div>
-                <h2 className="text-3xl font-bold mb-4">Sweet Delights Bakery</h2>
+                <h2 className="text-3xl font-bold mb-4">Why so Creeamy? Bakery</h2>
                 <p className="text-[var(--light-text)] mb-4">
-                  Founded in 2010, Sweet Delights has been serving the community with handcrafted desserts made from the finest ingredients. Our passion for baking and attention to detail ensures that every dessert is a masterpiece.
+                  Founded recently, Why so Creeamy? is driven by a passion for creating handcrafted desserts. Our goal is to bring delightful treats to the community, ensuring that every dessert is a masterpiece made from the finest ingredients.
                 </p>
                 <p className="text-[var(--light-text)] mb-6">
                   We believe that desserts should not only taste amazing but also look beautiful. That&apos;s why our team of skilled pastry chefs put their heart and soul into creating treats that delight both the palate and the eyes.
@@ -55,35 +55,42 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  name: 'Chocolate Cake',
-                  image: '/desserts/Chocolate-Cake.jpeg',
-                  description: 'Rich, moist chocolate cake with a velvety ganache frosting.',
-                  price: '$6.99',
+                  name: 'Milk Malai Milk Cake',
+                  image: '/assets/images/milk-mali-milkcake.jpeg',
+                  description: 'A delightful fusion of milk and malai, this cake is rich, moist, and topped with a creamy frosting.',
+                  price: '₹99',
                 },
                 {
-                  name: 'Boston Cream',
-                  image: '/desserts/Boston-Cream.jpeg',
-                  description: 'Delicate vanilla cake filled with custard and topped with chocolate glaze.',
-                  price: '$7.99',
+                  name: 'Biscoff Milk Cake',
+                  image: '/assets/images/Biscoff-cheesecake.jpeg',
+                  description: 'A luscious milk cake infused with the unique flavor of Biscoff, layered with creamy frosting and topped with crushed Biscoff cookies.',
+                  price: '₹99',
                 },
                 {
-                  name: 'Red Velvet',
-                  image: '/desserts/Red-Velvet.jpeg',
-                  description: 'Classic red velvet cake with cream cheese frosting and a hint of cocoa.',
-                  price: '$8.49',
+                  name: 'Oreo Cheesecake',
+                  image: '/assets/images/Oreo-cheese-cake.jpeg',
+                  description: 'A rich and creamy cheesecake infused with crushed Oreo cookies, topped with a decadent layer of Oreo crumbs and garnished with whole Oreo pieces for an irresistible treat.',
+                  price: '₹79',
                 },
                 {
-                  name: 'Dulce de Leche',
-                  image: '/desserts/Dulce.jpeg',
-                  description: 'Caramel-infused cake with dulce de leche filling and buttercream.',
-                  price: '$8.99',
-                },
-                {
-                  name: 'Assorted Treats',
+                  name: 'Blue Berry Cheesecake',
                   image: '/desserts/Yummy.jpeg',
-                  description: 'A selection of our finest mini desserts, perfect for sharing or sampling.',
-                  price: '$12.99',
+                  description: 'A creamy cheesecake infused with fresh blueberries, topped with a luscious blueberry compote and garnished with whole berries for a burst of flavor in every bite.',
+                  price: '₹79',
+                },
+                {
+                  name: 'Rasmalai Milk Cake',
+                  image: '/assets/images/Rasmalai-milk-cake.jpeg',
+                  description: 'A creamy milk cake filled with the soft, tender texture of homemade rasmalai, topped with a luscious cream cheese frosting and garnished with fresh raspberries for a burst of flavor in every bite.',
+                  price: '₹99',
+                },
+                {
+                  name: 'Chocolate Brownie',
+                  image: '/assets/images/Brownie.jpeg',
+                  description: 'A decadent chocolate brownie with a rich, fudgy texture, topped with a layer of creamy frosting and garnished with chocolate shavings for a luxurious finish.',
+                  price: '₹139',
                 }
+
               ].map((dessert, index) => (
                 <div key={index} className="card hover:shadow-md transition-shadow">
                   <div className="relative h-48 w-full rounded-t-lg overflow-hidden">
